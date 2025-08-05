@@ -1,0 +1,7 @@
+## NextBus: Stop-Level Bus Tracking with Distance and ETA Estimation ##
+
+Efficient public transportation relies on accurate, real-time information to support both commuters and transit agencies. The NextBus use case provides stop-level visibility into live bus movements and estimated time of arrival (ETA), integrating static datasets from the BMTC stop and route layers available in the GDI platform, with dynamic bus position data (observations from last 30 seconds) from IUDX platform.
+
+Route data is prepared with identifiers that align with the structure of the live feed. Each bus stop is then mapped to the list of routes that pass through it. When a user selects a stop, the application filters the live feed to identify buses operating on relevant routes. These buses are visualized on an interactive map, and key details such as Route_id, Vehicle license plate number, Distance (in kilometers) from each bus to the selected stop (based on route alignment), ETA (in minutes), calculated using an assumed average speed of 30 km/h. These values are presented in a summary table below the visualization.
+
+This stop-centric dashboard can be further enhanced by automating live feed downloads at regular intervals. It empowers commuters with timely arrival predictions and offers transit authorities a valuable tool for monitoring fleet operations, ensuring service efficiency, and addressing delays at a granular level.
